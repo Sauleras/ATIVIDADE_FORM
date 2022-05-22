@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="index.html" class="esquerda">&#11178;Perguntas</a>
+    <form action="" method="GET" class="formCss">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="Nome">Nome
+            <input type="text" class="focus"></label>
+
+            <label for="Data">Data de Nacimento
+            <input type="date" nome="data_nascimento" id="data_nascimento" class="focus" required></label>
+
+            <label for="E-mail">E-mail
+            <input type="email" class="focus"></label>
+
+            <label for="Telefone">Telefone
+            <input type="tel" class="focus"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados acadêmicos</legend>
+            <label for="id_gco">Curso
+                <select class="focus">
+                    <option>ADS</option>
+                    <option>TSI</option>
+                    <option>GTI</option>
+                    <option>TBD</option>
+                </select>
+            </label>
+
+            <label for="semestre">Semestre
+                <input type="radio" name="semestre" required class="focus">1º
+                <input type="radio" name="semestre" required class="focus">2º
+                <input type="radio" name="semestre" required class="focus">3º
+                <input type="radio" name="semestre" required class="focus">5º 
+                <input type="radio" name="semestre" required class="focus">4º
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="resposta">
+                Trabalha? <input type="checkbox" name="resposta" class="focus">
+            </label>
+
+            <label for="localTrabalho">Local de trabalho:
+                <input type="text" name="localTrabalho" class="focus">
+            </label>
+
+            <label for="experiencia">Descreva sua experiência
+                <textarea rows="6" style="width:26em" name="experiencia" class="focus"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Gravar" class="butao">
+        <input type="reset" value="Limpar" class="butao">
+    </form>
+
+</body>
+
+</html>
